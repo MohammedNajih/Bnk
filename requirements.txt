@@ -7,4 +7,3 @@ bs4
 OneClick==3.0.1
 hmac
 stdiomask
-uuid
