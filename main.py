@@ -15,7 +15,7 @@ logger = telebot.logger
 logger.setLevel(logging.DEBUG)
 
 
-@bot.message_handler(commands=['CHK'])
+@bot.message_handler(commands=['start'])
 def boten(message):
 	
     
