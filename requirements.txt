@@ -6,8 +6,5 @@ faker
 bs4
 OneClick==3.0.1
 hmac
-hashlib
-urllib
 stdiomask
-urllib.request
 uuid
