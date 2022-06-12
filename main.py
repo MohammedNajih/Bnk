@@ -22,13 +22,16 @@ def boten(message):
     
     mas = types.InlineKeyboardMarkup(row_width=2)
     
-    A = types.InlineKeyboardButton(text ="HUNTER", callback_data="F1")
-    
-    E = types.InlineKeyboardButton(text ="SOON", callback_data="F2") 
-    
+    A = types.InlineKeyboardButton(text ="HUNTER ALL", callback_data="F1")
+    Y = types.InlineKeyboardButton(text ="YAHOO", callback_data="F2") 
+    G = types.InlineKeyboardButton(text ="GMAIL", callback_data="F3") 
+    H = types.InlineKeyboardButton(text ="HOTMAIL", callback_data="F4") 
+    O = types.InlineKeyboardButton(text ="OUTLOOK", callback_data="F5") 
+    R = types.InlineKeyboardButton(text ="MAIL RU", callback_data="F6") 
+    I = types.InlineKeyboardButton(text ="MAIL AOL", callback_data="F7") 
     M = types.InlineKeyboardButton('DEVLOPER', url='https://t.me/ONCLIK')
     
-    mas.add(A,E,M)
+    mas.add(A,Y,G,H,O,R,I,M)
     pr = 'https://firebasestorage.googleapis.com/v0/b/shoteriq.appspot.com/o/IMG_20220527_223323_610.jpg?alt=media&token=20802a14-94fe-481e-a404-aaed52bb7784'
     bot.send_photo(message.chat.id,pr, f"HUNTER CHECKER BY MOHAMMED ALMUSWI",reply_markup=mas)
     
@@ -43,12 +46,13 @@ def masg(call):
 		
 		mas = types.InlineKeyboardMarkup(row_width=2)
 		
-		A = types.InlineKeyboardButton(text ="HUNTER", callback_data="F1")
-
-		E = types.InlineKeyboardButton(text ="SOON", callback_data="F2") 
-
-		M = types.InlineKeyboardButton('DEVLOPER', url='https://t.me/ONCLIK')
-		
+		A = types.InlineKeyboardButton(text ="HUNTER ALL", callback_data="F1")
+		Y = types.InlineKeyboardButton(text ="YAHOO", callback_data="F2") 
+		G = types.InlineKeyboardButton(text ="GMAIL", callback_data="F3") 
+		H = types.InlineKeyboardButton(text ="HOTMAIL", callback_data="F4") 
+		O = types.InlineKeyboardButton(text ="OUTLOOK", callback_data="F5") 
+		R = types.InlineKeyboardButton(text ="MAIL RU", callback_data="F6") 
+		I = types.InlineKeyboardButton(text ="MAIL AOL", callback_data="F7") 
 		M = types.InlineKeyboardButton('DEVLOPER', url='https://t.me/ONCLIK')
 		
 		bot.edit_message_text(chat_id=call.message.chat.id,message_id=call.message.message_id, text="HUNTER CHECKER BY MOHAMMED ALMUSWI",reply_markup=mas)
