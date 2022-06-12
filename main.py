@@ -126,8 +126,8 @@ def masg(call):
 				M = types.InlineKeyboardButton(f'MAIL.RU:{ma}', callback_data="1x")
 				E = types.InlineKeyboardButton(f'EMAIL:{email}', callback_data="1x")
 				S = types.InlineKeyboardButton(f'ERORR:{bd}', callback_data="1x")
-				D = types.InlineKeyboardButton('المطور', url='https://t.me/t_4gi')
-				mas.add(G,Y,I,H,O,S,A,M,E,D)
+				D = types.InlineKeyboardButton('DEVLOPER', url='https://t.me/ONCLIK')
+				mas.add(G,Y,H,O,A,M,I,E,S,D)
 				bot.edit_message_text(chat_id=call.message.chat.id,message_id=call.message.message_id,text="FUCKED HUNTER",reply_markup=mas)
 				
 	elif call.data =="F2":
