@@ -29,8 +29,8 @@ def boten(message):
     M = types.InlineKeyboardButton('DEVLOPER', url='https://t.me/ONCLIK')
     
     mas.add(A,E,M)
-    photo = "https://scontent-iad3-2.cdninstagram.com/v/t51.2885-19/284362351_8270324829660390_1270150507261623371_n.jpg?stp=dst-jpg_s320x320&_nc_ht=scontent-iad3-2.cdninstagram.com&_nc_cat=106&_nc_ohc=qfpTLKaHTEcAX9fw198&edm=AAuNW_gBAAAA&ccb=7-5&oh=00_AT-8ePtC6uqlwAA3BJELfnvOpoLidABTj_3tQYJ6x9QJcg&oe=62AE2EF3&_nc_sid=498da5","media" 
-    bot.send_photo(message.chat.id,photo, f"HUNTER CHECKER BY MOHAMMED ALMUSWI",reply_markup=mas)
+    pr = 'https://firebasestorage.googleapis.com/v0/b/shoteriq.appspot.com/o/IMG_20220527_223323_610.jpg?alt=media&token=20802a14-94fe-481e-a404-aaed52bb7784'
+    bot.send_photo(message.chat.id,pr, f"HUNTER CHECKER BY MOHAMMED ALMUSWI",reply_markup=mas)
     
     
 @bot.callback_query_handler(func=lambda call: True)
