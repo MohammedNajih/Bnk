@@ -32,8 +32,8 @@ def boten(message):
     M = types.InlineKeyboardButton('DEVLOPER', url='https://t.me/ONCLIK')
     
     mas.add(A,Y,G,H,O,R,I,M)
-    pr = 'https://firebasestorage.googleapis.com/v0/b/shoteriq.appspot.com/o/IMG_20220527_223323_610.jpg?alt=media&token=20802a14-94fe-481e-a404-aaed52bb7784'
-    bot.send_photo(message.chat.id,pr, f"HUNTER CHECKER BY MOHAMMED ALMUSWI",reply_markup=mas)
+    pr = 'https://firebasestorage.googleapis.com/v0/b/shoteriq.appspot.com/o/Fire%20green%20screen%20effect(1080P_HD).mp4?alt=media&token=fa9f2a61-144a-45bc-9769-56d2143bf58d'
+    bot.send_video(message.chat.id,pr, f"HUNTER CHECKER BY MOHAMMED ALMUSWI",reply_markup=mas)
     
     
 @bot.callback_query_handler(func=lambda call: True)
