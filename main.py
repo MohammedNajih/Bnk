@@ -30,7 +30,7 @@ def boten(message):
     
     mas.add(A,E,M)
     pr = 'https://firebasestorage.googleapis.com/v0/b/shoteriq.appspot.com/o/IMG_20220527_223323_610.jpg?alt=media&token=20802a14-94fe-481e-a404-aaed52bb7784'
-    bot.send_photo(message.chat.id,pr, f"HUNTER CHECKER BY MOHAMMED ALMUSWI",reply_markup=mas)
+    bot.send_message(message.chat.id, f"HUNTER CHECKER BY MOHAMMED ALMUSWI",reply_markup=mas)
     
     
 @bot.callback_query_handler(func=lambda call: True)
@@ -51,7 +51,7 @@ def masg(call):
 		
 		M = types.InlineKeyboardButton('DEVLOPER', url='https://t.me/ONCLIK')
 		pr = 'https://firebasestorage.googleapis.com/v0/b/shoteriq.appspot.com/o/IMG_20220527_223323_610.jpg?alt=media&token=20802a14-94fe-481e-a404-aaed52bb7784'
-		bot.edit_message_text(chat_id=call.message.chat.id,message_id=call.message.message_id,pr,text="HUNTER CHECKER BY MOHAMMED ALMUSWI",reply_markup=mas)
+		bot.edit_message_text(chat_id=call.message.chat.id,message_id=call.message.message_id,text="HUNTER CHECKER BY MOHAMMED ALMUSWI",reply_markup=mas)
 
 	elif call.data =="F1":
 		ho=0;gm=0;ins=0;ya=0;ma=0;ou=0;ao=0;bd=0
