@@ -131,7 +131,7 @@ def masg(call):
 				bot.edit_message_text(chat_id=call.message.chat.id,message_id=call.message.message_id,text="FUCKED HUNTER",reply_markup=mas)
 				
 	elif call.data =="F2":
-		bn=0;ins=0;gm=0
+		bn=0;ins=0;gm=0;bd=0
 		while True:
 			sets= ['@gmail.com','@aol.com','@yahoo.com','@mail.ru','@hotmail.com','@outlook.com']
 			user1 = Faker().email().split("@")[0]
