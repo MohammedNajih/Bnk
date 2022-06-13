@@ -133,20 +133,15 @@ def masg(call):
 	elif call.data =="F2":
 		bn=0;ins=0;gm=0;bd=0
 		while True:
-			sets= ['@gmail.com','@aol.com','@yahoo.com','@mail.ru','@hotmail.com','@outlook.com']
-			user1 = Faker().email().split("@")[0]
-			us = random.choice(sets)
-			user = user1+us
-			if (user.split('@')[1])=='gmail.com': 
-				email = user.split('@')[0]+'@gmail.com';gmail = Hunter.Gmail(str(email))
-				if str('[[["gf.wuar",1,[]]') in gmail:
-					gm+=1
-					Instagram = Hunter.Instagram(str(email))
-					if (Instagram["status"]) == "Successful":
-						ins+=1
-						bot.send_message(call.message.chat.id,f"Email : {email}")
-					else:
-						bn+=1
+			user = Faker().email().split("@")[0]
+			email = user+"@gmail.com" 
+			gmail = Hunter.Gmail(str(user))
+			if str('[[["gf.wuar",1,[]]') in gmail:
+				gm+=1
+				Instagram = Hunter.Instagram(str(email))
+				if (Instagram["status"]) == "Successful":
+					ins+=1
+					bot.send_message(call.message.chat.id,f"Email : {email}")
 				else:
 					bn+=1
 			else:
@@ -154,11 +149,13 @@ def masg(call):
 				mas = types.InlineKeyboardMarkup(row_width=2)
 				G = types.InlineKeyboardButton(f'GMAIL:{gm}',callback_data="1x")
 				I = types.InlineKeyboardButton(f'INSTAGRAM:{ins}', callback_data="1x")
+				E = types.InlineKeyboardButton(f'EMAIL:{email}', callback_data="1x")
 				B = types.InlineKeyboardButton(f'BAND:{bn}', callback_data="1x")
 				S = types.InlineKeyboardButton(f'ERORR:{bd}', callback_data="1x")
 				D = types.InlineKeyboardButton('DEVLOPER', url='https://t.me/ONCLIK')
-				mas.add(G,I,B,S,D)
+				mas.add(G,I,E,B,S,D)
 				bot.edit_message_text(chat_id=call.message.chat.id,message_id=call.message.message_id,text="FUCKED HUNTER",reply_markup=mas) 
+
 @server.route(f"/{BOT_TOKEN}", methods=["POST"])
 def redirect_message():
     json_string = request.get_data().decode("utf-8")
