@@ -4,6 +4,7 @@ user_agent
 requests
 faker
 bs4
+names
 OneClick==3.0.1
 uuid
 stdiomask
