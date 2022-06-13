@@ -1,4 +1,4 @@
-import requests,user_agent,json,flask,telebot,random,os,sys
+import requests,user_agent,json,flask,telebot,random,os,sys,names
 import telebot
 from telebot import types
 from user_agent import generate_user_agent
@@ -133,9 +133,20 @@ def masg(call):
 	elif call.data =="F2":
 		bn=0;ins=0;gm=0;bd=0
 		while True:
-			user = Faker().email().split("@")[0]
-			email = user+"@gmail.com" 
-			gmail = Hunter.Gmail(str(user))
+			r = '1234567890'
+			u = str("".join(random.choice(r)for i in range(4)))
+			n0 = names.get_first_name(gender='male')
+			n1 = names.get_first_name()
+			n2 = names.get_first_name(gender='femal')
+			pa2 = n0 + u 
+			pa3 = n1 + u 
+			pa4 = n2 + u
+			ema = Faker().email().split("@")[0]
+			em = (n0,n1,n2,ema,pa2,pa3,pa4)
+			emil = random.choice(em)
+			email = emil+"@gmail.com"
+			user = email.split('@')[0]
+			gmail = Hunter.Gmail(str(email))
 			if str('[[["gf.wuar",1,[]]') in gmail:
 				gm+=1
 				Instagram = Hunter.Instagram(str(email))
