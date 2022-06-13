@@ -68,7 +68,7 @@ def masg(call):
 						Instagram = Hunter.Instagram(str(email))
 						if (Instagram["status"]) == "Successful":
 							ins+=1
-							bot.send_message(message.chat.id,email)
+							bot.send_message(message.chat.id,text=f'{email}')
 			elif (user.split('@')[1])=='aol.com':
 					email= user
 					aol = Hunter.Aol(str(email))
@@ -77,7 +77,7 @@ def masg(call):
 						Instagram = Hunter.Instagram(str(email))
 						if (Instagram["status"]) == "Successful":
 							ins+=1
-							bot.send_message(message.chat.id,email)
+							bot.send_message(message.chat.id,text=f'{email}')
 			elif (user.split('@')[1])=='mail.ru':
 					email= user
 					mailur = Hunter.Mailru(str(email))
@@ -86,7 +86,7 @@ def masg(call):
 						Instagram = Hunter.Instagram(str(email))
 						if (Instagram["status"]) == "Successful":
 							ins+=1
-							bot.send_message(message.chat.id,email)
+							bot.send_message(message.chat.id,text=f'{email}')
 			elif (user.split('@')[1])=='yahoo':
 					email= user
 					yahoo = Hunter.Yahoo(str(email))
@@ -95,7 +95,7 @@ def masg(call):
 						Instagram = Hunter.Instagram(str(email))
 						if (Instagram["status"]) == "Successful":
 							ins+=1
-							bot.send_message(message.chat.id,email)
+							bot.send_message(message.chat.id,text=f'{email}')
 			elif (user.split('@')[1])=='hotmail.com':
 					email = user
 					hotmail = Hunter.Hotmail(str(email))
@@ -104,7 +104,7 @@ def masg(call):
 						Instagram = Hunter.Instagram(str(email))
 						if (Instagram["status"]) == "Successful":
 							ins+=1
-							bot.send_message(message.chat.id,email)
+							bot.send_message(message.chat.id,text=f'{email}')
 			elif (user.split('@')[1])=='@outlook.com':
 				email= user
 				outlook = Hunter.Hotmail(str(email))
@@ -113,7 +113,7 @@ def masg(call):
 					Instagram = Hunter.Instagram(str(email))
 					if (Instagram["status"]) == "Successful":
 						ins+=1
-						bot.send_message(message.chat.id,email)
+						bot.send_message(message.chat.id,text=f'{email}')
 			else:
 				bd+=1
 				mas = types.InlineKeyboardMarkup(row_width=2)
