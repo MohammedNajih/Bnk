@@ -137,9 +137,8 @@ def masg(call):
 			user1 = Faker().email().split("@")[0]
 			us = random.choice(sets)
 			user = user1+us
-			if (user.split('@')[1])=='gmail.com':
-				email= user 
-				gmail = Hunter.Gmail(str(email))
+			if (user.split('@')[1])=='gmail.com': 
+				email = user.split('@')[0]+'@gmail.com';gmail = Hunter.Gmail(str(email))
 				if str('[[["gf.wuar",1,[]]') in gmail:
 					gm+=1
 					Instagram = Hunter.Instagram(str(email))
