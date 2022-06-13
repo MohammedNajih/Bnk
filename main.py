@@ -50,8 +50,8 @@ def masg(call):
 		M = types.InlineKeyboardButton('DEVLOPER', url='https://t.me/ONCLIK')
 		
 		M = types.InlineKeyboardButton('DEVLOPER', url='https://t.me/ONCLIK')
-		
-		bot.edit_message_text(chat_id=call.message.chat.id,message_id=call.message.message_id, text="HUNTER CHECKER BY MOHAMMED ALMUSWI",reply_markup=mas)
+		pr = 'https://firebasestorage.googleapis.com/v0/b/shoteriq.appspot.com/o/IMG_20220527_223323_610.jpg?alt=media&token=20802a14-94fe-481e-a404-aaed52bb7784'
+		bot.edit_photo_text(chat_id=call.message.chat.id,message_id=call.message.message_id,pr,text="HUNTER CHECKER BY MOHAMMED ALMUSWI",reply_markup=mas)
 
 	elif call.data =="F1":
 		ho=0;gm=0;ins=0;ya=0;ma=0;ou=0;ao=0;bd=0
