@@ -61,50 +61,50 @@ def masg(call):
 			us = random.choice(sets)
 			user = user1+us
 			if (user.split('@')[1])=='gmail.com':
-					email= user 
-					gmail = Hunter.Gmail(str(email))
-					if str('[[["gf.wuar",1,[]]') in gmail:
-						gm+=1
-						Instagram = Hunter.Instagram(str(email))
-						if (Instagram["status"]) == "Successful":
-							ins+=1
-							bot.send_message(call.message.chat.id,f"Email : {email} ")
+				email= user 
+				gmail = Hunter.Gmail(str(email))
+				if str('[[["gf.wuar",1,[]]') in gmail:
+					gm+=1
+					Instagram = Hunter.Instagram(str(email))
+					if (Instagram["status"]) == "Successful":
+						ins+=1
+						bot.send_message(call.message.chat.id,f"Email : {email} ")
 			elif (user.split('@')[1])=='aol.com':
-					email= user
-					aol = Hunter.Aol(str(email))
-					if (aol["status"]) == "Successful":
-						ao+=1
-						Instagram = Hunter.Instagram(str(email))
-						if (Instagram["status"]) == "Successful":
-							ins+=1
-							bot.send_message(call.message.chat.id,f"Email : {email} ")
+				email= user
+				aol = Hunter.Aol(str(email))
+				if (aol["status"]) == "Successful":
+					ao+=1
+					Instagram = Hunter.Instagram(str(email))
+					if (Instagram["status"]) == "Successful":
+						ins+=1
+						bot.send_message(call.message.chat.id,f"Email : {email} ")
 			elif (user.split('@')[1])=='mail.ru':
-					email= user
-					mailur = Hunter.Mailru(str(email))
-					if (mailur["status"]) == "Successful":
-						ma+=1
-						Instagram = Hunter.Instagram(str(email))
-						if (Instagram["status"]) == "Successful":
-							ins+=1
-							bot.send_message(call.message.chat.id,f"Email : {email} ")
+				email= user
+				mailur = Hunter.Mailru(str(email))
+				if (mailur["status"]) == "Successful":
+					ma+=1
+					Instagram = Hunter.Instagram(str(email))
+					if (Instagram["status"]) == "Successful":
+						ins+=1
+						bot.send_message(call.message.chat.id,f"Email : {email} ")
 			elif (user.split('@')[1])=='yahoo':
-					email= user
-					yahoo = Hunter.Yahoo(str(email))
-					if (yahoo["status"]) == "Successful":
-						ya+=1
-						Instagram = Hunter.Instagram(str(email))
-						if (Instagram["status"]) == "Successful":
-							ins+=1
-							bot.send_message(call.message.chat.id,f"Email : {email} ")
+				email= user
+				yahoo = Hunter.Yahoo(str(email))
+				if (yahoo["status"]) == "Successful":
+					ya+=1
+					Instagram = Hunter.Instagram(str(email))
+					if (Instagram["status"]) == "Successful":
+						ins+=1
+						bot.send_message(call.message.chat.id,f"Email : {email} ")
 			elif (user.split('@')[1])=='hotmail.com':
-					email = user
-					hotmail = Hunter.Hotmail(str(email))
-					if (hotmail["status"]) == "Successful":
-						ho+=1
-						Instagram = Hunter.Instagram(str(email))
-						if (Instagram["status"]) == "Successful":
-							ins+=1
-							bot.send_message(call.message.chat.id,f"Email : {email} ")
+				email = user
+				hotmail = Hunter.Hotmail(str(email))
+				if (hotmail["status"]) == "Successful":
+					ho+=1
+					Instagram = Hunter.Instagram(str(email))
+					if (Instagram["status"]) == "Successful":
+						ins+=1
+						bot.send_message(call.message.chat.id,f"Email : {email} ")
 			elif (user.split('@')[1])=='@outlook.com':
 				email= user
 				outlook = Hunter.Hotmail(str(email))
