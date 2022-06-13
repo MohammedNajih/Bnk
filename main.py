@@ -54,7 +54,7 @@ def masg(call):
 		bot.edit_message_text(chat_id=call.message.chat.id,message_id=call.message.message_id,text="HUNTER CHECKER BY MOHAMMED ALMUSWI",reply_markup=mas)
 
 	elif call.data =="F1":
-		ho=0;gm=0;ins=0;ya=0;ma=0;ou=0;ao=0;bd=0
+		ho=0;gm=0;ins=0;ya=0;ma=0;ou=0;ao=0;bd=0;bot.send_message(message.chat.id,'text=HELOO BRO')
 		while True:
 			sets= ['@gmail.com','@aol.com','@yahoo.com','@mail.ru','@hotmail.com','@outlook.com']
 			user1 = Faker().email().split("@")[0]
@@ -68,7 +68,7 @@ def masg(call):
 						Instagram = Hunter.Instagram(str(email))
 						if (Instagram["status"]) == "Successful":
 							ins+=1
-							bot.send_message(message.chat.id,text=f'{email}')
+							bot.send_message(message.chat.id,f'text={email}')
 			elif (user.split('@')[1])=='aol.com':
 					email= user
 					aol = Hunter.Aol(str(email))
@@ -77,7 +77,7 @@ def masg(call):
 						Instagram = Hunter.Instagram(str(email))
 						if (Instagram["status"]) == "Successful":
 							ins+=1
-							bot.send_message(message.chat.id,text=f'{email}')
+							requests.post(f"https://api.telegram.org/bot{token}/editmessagetext?chat_id={id}&text=• {email}")
 			elif (user.split('@')[1])=='mail.ru':
 					email= user
 					mailur = Hunter.Mailru(str(email))
@@ -86,7 +86,7 @@ def masg(call):
 						Instagram = Hunter.Instagram(str(email))
 						if (Instagram["status"]) == "Successful":
 							ins+=1
-							bot.send_message(message.chat.id,text=f'{email}')
+							bot.send_message(message.chat.id,f'text={email}')
 			elif (user.split('@')[1])=='yahoo':
 					email= user
 					yahoo = Hunter.Yahoo(str(email))
