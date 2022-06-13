@@ -154,11 +154,10 @@ def masg(call):
 				mas = types.InlineKeyboardMarkup(row_width=2)
 				G = types.InlineKeyboardButton(f'GMAIL:{gm}',callback_data="1x")
 				I = types.InlineKeyboardButton(f'INSTAGRAM:{ins}', callback_data="1x")
-				E = types.InlineKeyboardButton(f'EMAIL:{email}', callback_data="1x")
 				B = types.InlineKeyboardButton(f'BAND:{bn}', callback_data="1x")
 				S = types.InlineKeyboardButton(f'ERORR:{bd}', callback_data="1x")
 				D = types.InlineKeyboardButton('DEVLOPER', url='https://t.me/ONCLIK')
-				mas.add(G,I,E,B,S,D)
+				mas.add(G,I,B,S,D)
 				bot.edit_message_text(chat_id=call.message.chat.id,message_id=call.message.message_id,text="FUCKED HUNTER",reply_markup=mas) 
 @server.route(f"/{BOT_TOKEN}", methods=["POST"])
 def redirect_message():
